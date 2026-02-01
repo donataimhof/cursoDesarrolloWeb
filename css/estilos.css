@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'TikTok Sans', sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    color: white;
+    text-decoration: underline;
+}
+
+h2 {
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #283484;
+}
+
+p {
+    font-family: 'TikTok Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: black;
+    margin: 20px 0;
+    align-content: justify;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+header {
+    align-items: center;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header h1 {
+    color: #283484;
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+header nav {
+    margin-right: 20px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav ul li a {
+    font-family: 'TikTok Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+}
+
+
+
+.introduccion {
+    padding: 20px;
+    background-size: cover;
+    background-position: center top;
+    background-image: url('../img/logoMit.jpeg');
+    height: auto;
+}
+
+.servicios {
+    padding: 20px;
+    background-color: #283484;
+    color: white;
+}
+
+.servicios ul li {
+    font-family: 'TikTok Sans', sans-serif;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    list-style: disc;
+}
+
+.turnos {
+    padding: 20px;
+    background-color: #283484;
+    color: white;
+}
+
+.turnos label {
+    display: block;
+    font-family: 'TikTok Sans', sans-serif;
+}
+
+.turnos input,
+.turnos select,
+.turnos textarea {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.turnos h2 {
+    font-family: 'TikTok Sans', sans-serif;
+    font-weight: normal;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+.turnos input[type="submit"] {
+    background-color: #ffffff;
+    border: outset 2px black;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'TikTok Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.ubicacion {
+    padding: 20px;
+    background-color: #283484;
+    color: white;
+}
+
+.ubicacion iframe {
+    height: 300px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+}
+
+
+.ubicacion figcaption {
+    text-align: center;
+    font-family: 'TikTok Sans', sans-serif;
+}
+
+.equipo {
+    padding: 20px;
+    background-color: #b4bbe6;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "titulo titulo titulo"
+        "descripcion descripcion descripcion"
+        "miembro1 miembro2 miembro3";
+    gap: 20px;
+}
+
+
+.equipo img {
+    width: 150px;
+    border-radius: 8px;
+    margin: 10px 0;
+    justify-content: center;
+}
+
+.equipo h3 {
+    font-family: 'TikTok Sans', sans-serif;
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.equipo div {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.equipo div p {
+    margin-left: 20px;
+    font-size: 1rem;
+    font-family: 'TikTok Sans', sans-serif;
+    color: black;
+    text-align: justify;
+}
+
+.equipo-titulo {
+    grid-area: titulo;
+    text-align: center;
+}
+
+.equipo-descripcion {
+    grid-area: descripcion;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.miembro1 {
+    grid-area: miembro1;
+    flex-direction: column;
+    text-align: center;
+}
+
+.miembro2 {
+    grid-area: miembro2;
+    flex-direction: column;
+    text-align: center;
+}
+
+.miembro3 {
+    grid-area: miembro3;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: 'TikTok Sans', sans-serif;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #283484;
+}
+
+footer address {
+    font-style: normal;
+    line-height: 1.6;
+}
+
+footer address a {
+    text-decoration: underline;
+}
+
+
+/* Media Queries for Responsiveness */
+
+
+@media (max-width: 480px) {
+    header {
+        padding: 8px;
+    }
+
+    header h1 {
+        font-size: 1rem;
+    }
+
+    header img {
+        width: 50px;
+        margin-right: 5px;
+    }
+
+    header nav ul {
+        gap: 5px;
+    }
+
+    header nav ul li a {
+        font-size: 0.8rem;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+        margin: 10px 0;
+    }
+
+    .introduccion {
+        padding: 10px;
+    }
+
+    .servicios {
+        padding: 10px;
+    }
+
+    .servicios ul li {
+        font-size: 0.95rem;
+        margin: 5px 0;
+    }
+
+    .turnos {
+        padding: 10px;
+    }
+
+    .turnos input,
+    .turnos select,
+    .turnos textarea {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .turnos h2 {
+        font-size: 1.1rem;
+    }
+
+    .turnos input[type="submit"] {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    .ubicacion {
+        padding: 10px;
+    }
+
+    .ubicacion iframe {
+        height: 200px;
+    }
+
+    .ubicacion figcaption {
+        font-size: 0.85rem;
+    }
+
+    .equipo {
+        padding: 10px;
+        gap: 10px;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "titulo"
+            "descripcion"
+            "miembro1"
+            "miembro2"
+            "miembro3";
+
+    }
+
+    .equipo img {
+        width: 100px;
+    }
+
+    .equipo h3 {
+        font-size: 1rem;
+    }
+
+    .equipo div p {
+        font-size: 0.85rem;
+    }
+
+    footer {
+        padding: 10px 5px;
+        font-size: 0.85rem;
+    }
+
+    footer address {
+        line-height: 1.4;
+    }
+}
